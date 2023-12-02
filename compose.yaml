@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  student:
+    image: mahuntington/student:zsh
+    command: /bin/sh
+    stdin_open: true
+    tty: true
+    container_name: student
