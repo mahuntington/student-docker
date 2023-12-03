@@ -1,1 +1,1 @@
-FROM mahuntington/student:postgres
+FROM mahuntington/student:python
