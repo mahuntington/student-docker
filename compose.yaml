@@ -8,3 +8,5 @@ services:
     container_name: student
     working_dir: /home/student
     command: ["pg_ctlcluster", "15", "main", "start", "--foreground"]
+    volumes:
+      - .:/home/student/dev
