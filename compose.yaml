@@ -3,13 +3,7 @@ version: '3'
 services:
   student:
     image: mahuntington/student:postgres
-      #command: /bin/sh
     stdin_open: true
     tty: true
     container_name: student
-    links:
-      - postgres
-
-  postgres:
-    image: mahuntington/student:postgres
     command: ["pg_ctlcluster", "15", "main", "start", "--foreground"]
