@@ -6,4 +6,5 @@ services:
     stdin_open: true
     tty: true
     container_name: student
+    working_dir: /home/student
     command: ["pg_ctlcluster", "15", "main", "start", "--foreground"]
