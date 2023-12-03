@@ -3,7 +3,7 @@
 Pull/create image:
 
 ```
-docker build -t mahuntington/student:postgres .
+docker build -t mahuntington/student:python .
 ```
 
 Create container:
