@@ -1,5 +1,6 @@
-FROM mahuntington/student:zsh
+FROM mahuntington/student:postgres
 
 WORKDIR /home/student
 
-CMD ["sudo", "pg_ctlcluster", "15", "main", "start"]
+CMD ["pg_ctlcluster", "15", "main", "start", "--foreground"]
+#RUN ["postgres", "-c", "max_connections=300"]
