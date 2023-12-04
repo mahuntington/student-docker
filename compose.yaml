@@ -10,3 +10,6 @@ services:
     command: ["pg_ctlcluster", "15", "main", "start", "--foreground"]
     volumes:
       - .:/home/student/dev
+    ports:
+      - 8000
+      - 3000
