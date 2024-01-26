@@ -1,5 +1,7 @@
 # Instructions
 
+## Installation
+
 Pull/create image:
 
 ```
@@ -12,14 +14,21 @@ Create container:
 docker-compose up -d
 ```
 
-Enter container
+## Each Session:
+
+Enter Docker container:
 
 ```
 ./enter-container.sh
 ```
 
-Enter Postgres
+When working with Postgres, run the following to begin working with the `psql` database interface:
 
 ```
 psql
 ```
+
+## Exiting
+
+- Exit `psql`: `\q`
+- Exit Docker container: `exit`
